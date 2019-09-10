@@ -1,0 +1,15 @@
+#version 1.0
+#contact: piotr4@gmail.com
+#GPLv3
+
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;
+Actions=openAsRoot
+X-KDE-Priority=TopLevel
+
+[Desktop Action openAsRoot]
+Name=Open Krusader Here (Root)
+Icon=system-file-manager
+Exec=kdesu krusader "%u"
